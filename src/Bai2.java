@@ -5,6 +5,5 @@ public class Bai2 {
         System.out.println(Double.MIN_VALUE);
         System.out.println(Long.SIZE);
         System.out.println(Float.SIZE);
-
     }
 }
