@@ -38,22 +38,37 @@ public class Bai6 {
 //        mesg = input.nextLine();
 //        System.out.println(mesg.length());
 //        System.out.println(mesg.toUpperCase());
-//        System.out.println(mesg.replace(" ","*"));
+////        System.out.println(mesg.replace(" ","*"));
+//
+//        String str1;
+//        String str2;
+//        System.out.println("Nhập chuỗi 1:");
+//        str1 = input.nextLine();
+//
+//        System.out.println("Nhập chuỗi 2:");
+//        str2 = input.nextLine();
+//
+//        System.out.println(str1.indexOf(str2));
+//        System.out.println(str1.lastIndexOf(str2));
+//        System.out.println(str1.replace(" "," "));
+//
+//        String result = str1.trim(); // loại bỏ space từ dầu 2 phía
+//        result = result.replaceAll("\\s+"," "); // thay thế khoảng trắng trong chuỗi string
+//        System.out.println(result);
 
-        String str1;
-        String str2;
-        System.out.println("Nhập chuỗi 1:");
-        str1 = input.nextLine();
+        String fullname;
+        System.out.println("Nhập Họ và tên:");
+        fullname = input.nextLine();
 
-        System.out.println("Nhập chuỗi 2:");
-        str2 = input.nextLine();
+        int firstSpaceIndex = fullname.indexOf(" ");
+        int lastSpaceIndex = fullname.lastIndexOf(" ");
 
-        System.out.println(str1.indexOf(str2));
-        System.out.println(str1.lastIndexOf(str2));
-        System.out.println(str1.replace(" "," "));
+        String lastName = fullname.substring(0, firstSpaceIndex);
+        String middleName = fullname.substring(firstSpaceIndex+1, lastSpaceIndex);
+        String firstname = fullname.substring(lastSpaceIndex + 1);
 
-        String result = str1.trim(); // loại bỏ space từ dầu 2 phía
-        result = result.replaceAll("\\s+"," "); // thay thế khoảng trắng trong chuỗi string
-        System.out.println(result);
+        System.out.println("Họ: " + lastName);
+        System.out.println("Dệm: " + middleName);
+        System.out.println("Tên: " + firstname);
     }
 }
