@@ -48,6 +48,12 @@ public class Bai6 {
         System.out.println("Nhập chuỗi 2:");
         str2 = input.nextLine();
 
+        System.out.println(str1.indexOf(str2));
+        System.out.println(str1.lastIndexOf(str2));
+        System.out.println(str1.replace(" "," "));
 
+        String result = str1.trim(); // loại bỏ space từ dầu 2 phía
+        result = result.replaceAll("\\s+"," "); // thay thế khoảng trắng trong chuỗi string
+        System.out.println(result);
     }
 }
