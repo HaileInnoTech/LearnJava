@@ -53,15 +53,16 @@ public class Bai13 {
 
         for (int i = a; i <= b; i++) {
             boolean isPrime = true;
-            if(i < 2){ isPrime = false;}
-            else {
+            if (i < 2) {
+                isPrime = false;
+            } else {
                 for (int j = 2; j < Math.sqrt(i); j++) {
                     if (i % j == 0) {
                         isPrime = false;
                     }
                 }
             }
-            System.out.print(isPrime ? i +", ":"");
+            System.out.print(isPrime ? i + ", " : "");
         }
 
     }
